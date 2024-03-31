@@ -16,6 +16,7 @@
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 BOARD_VENDOR := motorola
 
@@ -244,6 +245,7 @@ VENDOR_SECURITY_PATCH := 2023-07-01
 
 # SELinux
 TARGET_SEPOLICY_DIR := msmsteppe
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
