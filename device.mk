@@ -36,7 +36,9 @@ PRODUCT_PACKAGES += \
     SystemUIResHanoip \
     TelephonyResHanoip
 
-DEVICE_PACKAGE_OVERLAYS += device/motorola/hanoip/overlay-lineage
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
