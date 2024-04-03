@@ -24,12 +24,6 @@ $(call inherit-product, device/motorola/hanoip/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-ifneq ($(NO_GMS),true)
-$(call inherit-product-if-exists, vendor/gapps/common/BoardConfigVendor.mk)
-endif
-
-WITH_GMS := true
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hanoip
 PRODUCT_DEVICE := hanoip
