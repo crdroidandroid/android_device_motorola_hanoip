@@ -36,6 +36,12 @@ PRODUCT_PACKAGES += \
     SystemUIResHanoip \
     TelephonyResHanoip
 
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
+
+PRODUCT_PACKAGES += \
+    WifiResCommon_Sys
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -560,7 +566,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.wifi.hostapd@1.1.vendor \
     vendor.qti.hardware.wifi.supplicant@2.0.vendor \
     vendor.qti.hardware.wifi.supplicant@2.1.vendor \
-    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
