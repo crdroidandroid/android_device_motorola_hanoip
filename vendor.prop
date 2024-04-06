@@ -7,3 +7,6 @@ vendor.camera.aux.packagelist=org.lineageos.aperture
 
 # GFX
 ro.config.avoid_gfx_accel=true
+
+# HWUI
+debug.hwui.skia_atrace_enabled=false
