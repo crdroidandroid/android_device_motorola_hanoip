@@ -34,19 +34,19 @@ PRODUCT_PACKAGES += \
     CarrierConfigResHanoip \
     SettingsResHanoip \
     SystemUIResHanoip \
-    TelephonyResHanoip
+    TelephonyResHanoip \
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
-
+# WifiOverlay
 PRODUCT_PACKAGES += \
     WifiResCommon_Sys
 
-# Overlay
+# Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage/lineage-sdk
 
 # A/B
 AB_OTA_UPDATER := true
