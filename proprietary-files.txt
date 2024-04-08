@@ -80,6 +80,10 @@ vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 
+# Audio - from cheetah-user 13 TQ3A.230705.001 10216780 release-keys
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
+
 # Audio (Firmware)
 vendor/firmware/aw882xx_monitor.bin
 vendor/firmware/aw882xx_rcv_reg.bin
