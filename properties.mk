@@ -357,6 +357,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
 
+# Radio VoNR Calling
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.is_vonr_enabled_0=true \
+    persist.radio.is_vonr_enabled_1=true
+
 # WiFi
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     config.disable_rtt=true
