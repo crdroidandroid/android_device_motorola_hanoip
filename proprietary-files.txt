@@ -448,7 +448,6 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Fingerprint (Chipone)
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
-vendor/bin/hw/chipone_ident
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
 vendor/lib/hw/chipone.fingerprint.default.so
 vendor/lib64/hw/chipone.fingerprint.default.so

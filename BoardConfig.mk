@@ -19,7 +19,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
 BOARD_VENDOR := motorola
-
 DEVICE_PATH := device/motorola/hanoip
 
 # Architecture
@@ -195,6 +194,7 @@ TARGET_DISABLED_UBWC := true
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -212,9 +212,6 @@ BOARD_SUPER_PARTITION_SIZE := 9729736704
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
-
-# Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
 
 # Disable sparse for ext/f2fs images
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
@@ -239,11 +236,9 @@ VENDOR_SECURITY_PATCH := 2023-07-01
 
 # SELinux
 TARGET_SEPOLICY_DIR := msmsteppe
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-#PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true

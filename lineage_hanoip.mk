@@ -25,18 +25,20 @@ $(call inherit-product, device/motorola/hanoip/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_hanoip
 PRODUCT_DEVICE := hanoip
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(60)
+PRODUCT_NAME := lineage_hanoip
 PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2460
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Flags
+TARGET_UNOFFICIAL_BUILD_ID := Kevin
 
 # Build info
 BUILD_FINGERPRINT := "motorola/hanoip_retail/hanoip:11/S2RI32.32-20-9-9-2/1591b:user/release-keys"
