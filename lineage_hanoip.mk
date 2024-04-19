@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2023-2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,6 +24,9 @@ $(call inherit-product, device/motorola/hanoip/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# ViperFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := hanoip
 PRODUCT_BRAND := motorola
@@ -39,6 +42,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Flags
 TARGET_UNOFFICIAL_BUILD_ID := Kevin
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Build info
 BUILD_FINGERPRINT := "motorola/hanoip_retail/hanoip:11/S2RI32.32-20-9-9-2/1591b:user/release-keys"
