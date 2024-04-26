@@ -9,6 +9,9 @@ git clone https://github.com/LineageOS/android_system_qcom system/qcom
 # Clonar el repositorio packages_apps_ViPER4AndroidFX
 git clone https://github.com/TogoFire/packages_apps_ViPER4AndroidFX packages/apps/ViPER4AndroidFX
 
+# Clonar bcr
+git clone https://github.com/kenway214/vendor_bcr.git vendor/bcr
+
 # Configurar el uso de ccache
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache
