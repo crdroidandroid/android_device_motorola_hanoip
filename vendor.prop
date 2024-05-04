@@ -10,6 +10,8 @@ ro.config.avoid_gfx_accel=true
 
 # HWUI
 debug.hwui.skia_atrace_enabled=false
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
 
 # Audio
 persist.vendor.audio.spatializer.speaker_enabled=true
