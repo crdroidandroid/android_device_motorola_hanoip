@@ -19,3 +19,4 @@ ro.audio.spatializer_enabled=true
 
 # Display
 debug.sf.enable_transaction_tracing=false
+debug.sf.disable_backpressure=1
