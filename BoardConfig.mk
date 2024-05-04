@@ -228,6 +228,9 @@ TARGET_NO_RECOVERY := true
 # Move recovery resources to vendor_boot
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
