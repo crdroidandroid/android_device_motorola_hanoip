@@ -14,3 +14,6 @@ debug.hwui.skia_atrace_enabled=false
 # Audio
 persist.vendor.audio.spatializer.speaker_enabled=true
 ro.audio.spatializer_enabled=true
+
+# Display
+debug.sf.enable_transaction_tracing=false
