@@ -21,3 +21,6 @@ ro.audio.spatializer_enabled=true
 debug.sf.enable_transaction_tracing=false
 debug.sf.disable_backpressure=1
 vendor.display.disable_inline_rotator=1
+
+# App
+ro.launcher.blur.appLaunch=0
