@@ -25,3 +25,6 @@ ro.config.avoid_gfx_accel=true
 
 # App
 ro.launcher.blur.appLaunch=0
+
+# Perf
+ro.vendor.perf.scroll_opt=true
