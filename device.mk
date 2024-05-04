@@ -31,7 +31,8 @@ $(call inherit-product-if-exists, vendor/bcr/bcr.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-DEVICE_PACKAGE_OVERLAYS += device/motorola/hanoip/overlays-derp
+# Extras
+TARGET_INCLUDE_OLD_WALLPAPERS := true
 
 # Overlays
 PRODUCT_PACKAGES += \
