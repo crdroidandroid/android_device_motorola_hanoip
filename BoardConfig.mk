@@ -72,13 +72,13 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/motorola/hanoip
+TARGET_KERNEL_SOURCE := kernel/motorola/sm7150
 TARGET_KERNEL_CONFIG := \
-    vendor/sdmsteppe-perf_defconfig \
+    vendor/hanoip_defconfig \
     vendor/ext_config/moto-sdmsteppe.config \
     vendor/ext_config/moto-sdmmagpie-hanoip.config \
     vendor/debugfs.config \
-    vendor/ext_config/lineage-moto-sdmsteppe.config
+    vendor/ext_config/hanoip-moto-sdmsteppe.config
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
