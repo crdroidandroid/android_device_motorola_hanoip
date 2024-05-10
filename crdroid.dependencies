@@ -1,0 +1,15 @@
+[
+  {
+    "repository": "Hanoip-Development/packages_apps_MotoActions",
+    "target_path": "packages/apps/MotoActions",
+    "branch": "fourteen-qpr2"
+  },
+  {
+    "repository": "crdroidandroid/android_kernel_motorola_sm7150",
+    "target_path": "kernel/motorola/sm7150"
+  },
+  {
+    "repository": "crdroidandroid/proprietary_vendor_motorola_hanoip",
+    "target_path": "vendor/motorola/hanoip"
+  }
+]
