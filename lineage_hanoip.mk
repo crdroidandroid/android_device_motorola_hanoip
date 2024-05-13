@@ -24,9 +24,6 @@ $(call inherit-product, device/motorola/hanoip/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# ViperFX
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := hanoip
 PRODUCT_BRAND := motorola
